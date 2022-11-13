@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/ghf7cex.css");
 /* @import url("https://use.typekit.net/zmy0cob.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 /* @import url("https://use.typekit.net/aby7dwr.css"); */
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Rubik:wght@300;400;500;600&display=swap");
 
@@ -47,7 +47,10 @@ body {
   font-style: normal;
   overflow-x: hidden;
   color: var(--text-dark);
-  margin-top: 150px;
+}
+
+#top {
+  padding-top: 150px;
 }
 
 .row {
@@ -57,9 +60,11 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  margin-top: 25px;
 }
 
+#third {
+  margin-top: 25px;
+}
 .profile-pic {
   width: 100%;
   max-width: 350px;
@@ -90,9 +95,10 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   font-size: 3rem;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   color: var(--text-light);
+  letter-spacing: -0.2px;
 }
 
 #name {
@@ -197,9 +203,10 @@ body {
 }
 
 .about-text {
-  font-family: "Oranienbaum", serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 2.5rem;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.3px;
   width: 90%;
   max-width: 700px;
   text-align: left;
@@ -208,7 +215,7 @@ body {
 }
 
 #bright {
-  color: var(--text);
+  color: var(--text-vlight);
 }
 
 .working {
@@ -228,4 +235,137 @@ body {
   height: auto;
   border: solid 2.5px var(--grey-bg);
   overflow: hidden;
+}
+
+.upstox-card {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+  background-color: #000000;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+#upstox-logo {
+  width: 1200px;
+  margin-left: -50px;
+  opacity: 20%;
+}
+
+.upstox-logo {
+  z-index: -10;
+}
+
+.upstox-gif {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.upstox-gif img {
+  height: auto;
+  width: 300px;
+  margin-top: -200px;
+  border-radius: 36px;
+  z-index: 10;
+}
+
+.desc {
+  width: 250px;
+  font-size: 1.75rem;
+  color: var(--text-med);
+  font-weight: 600;
+  margin-top: 100px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.my-work {
+  width: 250px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-med);
+  letter-spacing: -0.3px;
+}
+
+.my-work svg {
+  margin-left: 12px;
+}
+
+.rovers {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.column-1 {
+  width: 90%;
+  max-width: 350px;
+  background-color: #111111;
+  border-radius: 4px;
+  height: 600px;
+}
+
+.column-2 {
+  width: 90%;
+  max-width: 350px;
+}
+
+.column-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 350px;
+  justify-content: space-between;
+}
+
+.column-3 img {
+  width: 100%;
+  height: auto;
+}
+
+#extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 25px;
+}
+
+.column-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 275px;
+}
+
+.column-extra svg {
+  border-radius: 4px;
+}
+
+.ieee img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 4px;
 }
