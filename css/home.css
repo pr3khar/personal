@@ -161,6 +161,27 @@ body {
   flex-direction: row;
 }
 
+.gradient {
+  background: linear-gradient(
+    135deg,
+    #7fa5f0 0%,
+    #ed73a6 30%,
+    #fccb82 50%,
+    #eb83ae 75%,
+    #967ff4 100%
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position: 400%;
+  }
+}
+
 @keyframes slide-left {
   from {
     -webkit-transform: translateX(0);
