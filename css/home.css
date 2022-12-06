@@ -351,6 +351,31 @@ body {
 .block {
   background-color: var(--dark-bg);
   height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.logo-rovers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#rover-logo {
+  animation: rotation 8s infinite linear;
+  margin-right: 12px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .column-2 {
@@ -405,4 +430,131 @@ body {
   width: 100%;
   max-width: 800px;
   border-radius: 4px;
+}
+
+.openhouse {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.oh-c1 {
+  display: flex;
+  height: 600px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.oh-c3 {
+  display: flex;
+  height: 600px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.oh-c2 {
+  display: flex;
+  height: 600px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.oh-c2 img {
+  width: 350px;
+  height: 600px;
+  border-radius: 4px;
+}
+
+.oh-logo {
+  width: 350px;
+  height: 225px;
+  background-color: #ef5c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.oh-know {
+  width: 350px;
+  height: 222px;
+  background-color: #ffe1d9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-family: "Inter";
+  letter-spacing: -0.3px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ef5c34;
+  padding-right: 20px;
+}
+
+.pie {
+  width: 350px;
+  height: 350px;
+}
+
+.pie img {
+  width: 350px;
+  height: 350px;
+  border-radius: 4px;
+}
+
+.oh-logo svg {
+  width: 80%;
+  height: auto;
+}
+
+.video video {
+  border-radius: 4px;
+}
+
+#extra-proj {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.row-1 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-2 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#proctur {
+  width: 525px;
+  height: 300px;
+  border-radius: 4px;
+}
+
+#parley {
+  width: 550px;
+  height: 300px;
+  border-radius: 4px;
+}
+
+#focal {
+  width: 800px;
+  height: 275px;
+  border-radius: 4px;
+}
+
+#wi-sa {
+  width: 275px;
+  height: 275px;
 }
