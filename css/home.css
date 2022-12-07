@@ -563,6 +563,10 @@ body {
   height: 350px;
 }
 
+#extras {
+  margin-bottom: 150px;
+}
+
 @media only screen and (max-width: 600px) {
   .row {
     flex-direction: column;
@@ -760,11 +764,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
+    margin-top: 25px;
   }
 
   .column-2 img {
     width: 100%;
     height: auto;
+    margin-top: 25px;
   }
 
   .column-3 {
@@ -778,6 +784,7 @@ body {
   .column-3 img {
     width: 100%;
     height: auto;
+    margin-top: 25px;
   }
 
   #extras {
@@ -804,6 +811,7 @@ body {
   .ieee img {
     width: 100%;
     border-radius: 4px;
+    margin-top: 25px;
   }
 
   .openhouse {
@@ -815,9 +823,13 @@ body {
     margin-top: 25px;
   }
 
+  #resume {
+    margin-top: 25px;
+  }
+
   .oh-c1 {
     display: flex;
-    height: 600px;
+    height: auto;
     justify-content: space-between;
     flex-direction: column;
     max-width: 100%;
@@ -825,16 +837,18 @@ body {
 
   .oh-c3 {
     display: flex;
-    height: 600px;
+    height: auto;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 25px;
   }
 
   .oh-c2 {
     display: flex;
-    height: 600px;
+    height: auto;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 25px;
   }
 
   .oh-c2 img {
@@ -933,9 +947,14 @@ body {
   .video {
     width: 100%;
     height: 100%;
+    margin-top: 25px;
   }
 
   .video video {
     border-radius: 4px;
+  }
+
+  #extras {
+    margin-bottom: 150px;
   }
 }
