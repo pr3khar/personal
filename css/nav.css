@@ -96,5 +96,22 @@ nav {
 @media only screen and (max-width: 800px) {
   .fit-nav {
     width: 95%;
+    margin-bottom: 36px;
+  }
+
+  .nav-links a {
+    margin-left: 16px;
+  }
+
+  #light {
+    visibility: hidden;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
   }
 }
