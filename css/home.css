@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
@@ -722,9 +722,10 @@ body {
 
   .my-story {
     width: 100%;
-    height: 300px;
+    height: auto;
     border: solid 2.5px var(--grey-bg);
     overflow: hidden;
+    margin-top: 25px;
   }
 
   .upstox-card {
