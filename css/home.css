@@ -625,10 +625,6 @@ body {
   height: 350px;
 }
 
-#extras {
-  margin-bottom: 150px;
-}
-
 .sec-line {
   height: 3px;
   width: 90%;
@@ -1028,6 +1024,6 @@ body {
   }
 
   #extras {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
 }
