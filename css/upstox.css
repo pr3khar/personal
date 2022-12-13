@@ -1,0 +1,243 @@
+@import url("https://use.typekit.net/zmy0cob.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import url("https://use.typekit.net/aby7dwr.css");
+@import url("https://use.typekit.net/ghf7cex.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Lora:wght@600&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-light: #fdfdfd;
+  --theme-blue: #e0e7f1;
+
+  --blue: #3b8eef;
+  --pink: #fc466d;
+  --yellow: #ffd82b;
+  --green: #64ffa2;
+
+  --dark-bg: rgb(22, 22, 22);
+  --light-bg: #ffffff;
+  --grey-bg: #f4f4f5;
+
+  --text: #8a8a8a;
+  --text-dark: #1d1e26;
+  --text-med: #636363;
+
+  --text-light: #a9aaac;
+  --text-vlight: #fffffb;
+
+  --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
+  --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
+}
+
+body {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--light-bg);
+  overflow-x: hidden;
+  color: var(--text-dark);
+}
+
+#header-img {
+  height: 700px;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-color: #2a1044;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  margin-bottom: 50px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--text-dark);
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-dark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.breadcrumb a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hero {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero img {
+  width: 360px;
+  margin-top: -36px;
+}
+
+.text-hero {
+  font-size: 4rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  width: 90%;
+  max-width: 700px;
+  color: #fff9e7;
+  margin-top: -200px;
+}
+
+#text-desc {
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.header {
+  font-size: 2rem;
+  font-family: "DM Serif Text", serif;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.para {
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+#nda {
+  width: 100%;
+  background-color: #f5f5f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: -200px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.view-link {
+  background-color: #2d1b5e;
+  width: 150px;
+  height: 56px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.view-link a {
+  text-decoration: none;
+  color: #fffff3;
+}
+
+.view-link svg {
+  margin-left: 8px;
+  margin-bottom: -4px;
+}
+
+.para a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.learning-block {
+  width: 100%;
+  background-color: #f5f5f2;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  min-width: 65px;
+}
+
+.para-block {
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  line-height: 30px;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header-img {
+    height: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #2a1044;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 360px;
+    margin-top: 100px;
+  }
+
+  .text-hero {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  .learning-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .para-block {
+    margin-left: 12px;
+  }
+}

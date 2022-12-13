@@ -1,0 +1,143 @@
+@import url("https://use.typekit.net/ghf7cex.css");
+/* @import url("https://use.typekit.net/zmy0cob.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+/* @import url("https://use.typekit.net/aby7dwr.css"); */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-light: #fdfdfd;
+  --theme-blue: #e0e7f1;
+
+  --blue: #3b8eef;
+  --pink: #fc466d;
+  --yellow: #ffd82b;
+  --green: #64ffa2;
+
+  --dark-bg: rgb(22, 22, 22);
+  --light-bg: #ffffff;
+  --grey-bg: #f4f4f5;
+
+  --text: #8a8a8a;
+  --text-dark: #1d1e26;
+  --text-med: #636363;
+
+  --text-light: #a9aaac;
+  --text-vlight: #fffffb;
+
+  --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
+  --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
+}
+
+body {
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  color: var(--text-dark);
+}
+
+.div1 {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.input-field {
+  margin-top: 50px;
+}
+
+.back-home {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 48px;
+  font-size: 1.2rem;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.div2 {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 25px;
+  color: #656262;
+}
+
+.header {
+  width: 100%;
+  max-width: 500px;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.header svg {
+  margin-left: 12px;
+}
+
+.sub-head {
+  margin-bottom: 48px;
+  width: 100%;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.box {
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  max-width: 500px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid #656262;
+}
+
+.input-field input {
+  text-align: left;
+}
+
+#button {
+  width: 100px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #5a298b;
+  text-align: center;
+  margin-left: -0.5px;
+}
+
+.confirm {
+  width: 100%;
+  max-width: 500px;
+  text-align: right;
+  margin-left: 6px;
+  border: none;
+  font-size: 20px;
+  margin-top: 24px;
+  color: var(--light-bg);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-weight: 600;
+}
