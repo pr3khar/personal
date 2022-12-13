@@ -36,7 +36,7 @@
 
   --text-light: #a9aaac;
   --text-vlight: #fffffb;
-  --text-light2: #dfdfdf;
+  --text-light2: #d0d0d0;
   --text-light3: #efefef;
 
   --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
@@ -70,9 +70,9 @@ body {
 .head-1 a {
   font-size: 3rem;
   color: var(--text-dark);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.5px;
 }
 
 .links {
@@ -99,7 +99,7 @@ body {
 #footer li {
   font-family: "Inter", sans-serif;
   letter-spacing: -0.2px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .menu-links a {
@@ -132,11 +132,11 @@ body {
   font-size: 1.5rem;
   padding-left: 20px;
   transition: all 0.2s ease-in;
+  color: var(--text-med);
 }
 
 .social-icons i:hover {
-  color: var(--text-light);
-  text-shadow: 5px 5px 50px #6b6b6b, -5px -5px 50px #9c9c9c;
+  text-shadow: 5px 5px 50px #5c92ff, -5px -5px 50px #ff88b2;
 }
 
 .footer-line {
@@ -161,14 +161,17 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 50px;
   text-align: center;
   letter-spacing: -0.2px;
-  font-family: "Inter", sans-serif;
   background-color: var(--text-light3);
   padding-top: 24px;
   padding-bottom: 24px;
   border-radius: 4px;
+}
+
+i {
+  color: var(--text-light);
 }
 
 .footer a {
@@ -186,19 +189,19 @@ body {
   height: 0.5px;
   bottom: 0;
   left: 0;
-  background-color: var(--text-light);
+  background-color: var(--text-dark);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 .footer a:hover:after {
-  color: var(--text-light);
+  color: var(--text-dark);
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .footer a:hover {
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 @media only screen and (max-width: 800px) {
@@ -213,11 +216,11 @@ body {
 
   .footer-hello {
     margin-bottom: 50px;
-    width: 95%;
+    width: 100%;
   }
 
   .links {
-    width: 95%;
+    width: 100%;
   }
 
   .footer-line {
@@ -225,21 +228,27 @@ body {
   }
 
   .social-icons {
-    width: 95%;
+    width: 100%;
+    margin-left: -18px;
   }
 
   .quote-footer {
-    font-size: 1.25rem;
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .footer-bottom {
-    padding-top: 100px;
-    width: 100%;
+    margin-top: 50px;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column-reverse;
-    align-items: left;
+    align-items: flex-start;
     color: var(--text-med);
+  }
+
+  .end {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
   }
 }
