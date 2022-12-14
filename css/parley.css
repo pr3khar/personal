@@ -1,0 +1,261 @@
+@import url("https://use.typekit.net/zmy0cob.css");
+@import url("https://use.typekit.net/zmy0cob.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
+:root {
+  --theme-light: #fdfdfd;
+  --theme-blue: #e0e7f1;
+
+  --blue: #287eff;
+  --pink: #fc466d;
+  --yellow: #ffd82b;
+  --green: #64ffa2;
+
+  --dark-bg: rgb(22, 22, 22);
+  --lg-dark-bg: rgb(37, 37, 37);
+  --light-bg: #ffffff;
+  --grey-bg: #f4f4f5;
+
+  --text: #8a8a8a;
+  --text-dark: rgb(22, 22, 22);
+  --text-med: #636363;
+
+  --text-light: #a9aaac;
+  --text-vlight: #fffffb;
+
+  --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
+  --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
+}
+
+body {
+  background-color: var(--lg-dark-bg);
+  color: var(--text);
+  font-family: sofia-pro, "sans-serif";
+  text-transform: lowercase;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  color: #9a9a9a;
+}
+
+.fit {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.screen {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.head {
+  color: var(--text-med);
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+
+.head-2 {
+  color: var(--text);
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+
+.head-text {
+  margin-top: 20px;
+  color: var(--text-vlight);
+  font-size: 2.75rem;
+  font-weight: 600;
+  width: 100%;
+  max-width: 800px;
+}
+
+.head-text-2 {
+  margin-top: 30px;
+  color: var(--text-vlight);
+  font-size: 2.75rem;
+  font-weight: 600;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.space {
+  height: 40px;
+}
+
+.screen-2 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.bg-parley {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block {
+  width: 90%;
+  max-width: 560px;
+}
+
+.block-2 {
+  width: 90%;
+  max-width: 560px;
+}
+
+.block-3 {
+  width: 90%;
+  max-width: 560px;
+}
+
+.block img {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.block-2 img {
+  margin-top: 50px;
+  width: auto;
+  height: 400px;
+}
+
+.block-3 img {
+  margin-top: 50px;
+  width: auto;
+  height: 275px;
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+  margin-bottom: -195px;
+  padding-bottom: 100px;
+}
+
+.screen-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.box-img-1 {
+  width: 90%;
+  max-width: 775px;
+}
+
+.box-img-1 img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+}
+
+.box-img-2 {
+  width: 90%;
+  max-width: 425px;
+}
+
+.box-img-2 img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+}
+
+.scr-images {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.scr-images img {
+  margin-right: 25px;
+  height: 375px;
+  width: auto;
+  border-radius: 10px;
+}
+
+p {
+  margin: auto;
+  text-align: center;
+  padding: 100px;
+  font-size: 1.5rem;
+  color: #ff9ab0;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.back-to-home {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  background-color: #eeeeee;
+  padding: 20px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.back-to-home:hover {
+  background-color: #d8d8d8;
+}
+
+.screen-2 iframe {
+  height: 60vh;
+  width: 90%;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: var(--lg-dark-bg);
+    color: var(--text);
+    font-family: sofia-pro, "sans-serif";
+    text-transform: lowercase;
+  }
+
+  .scr-images {
+    flex-direction: column;
+  }
+
+  .scr-images img {
+    margin-top: 20px;
+  }
+
+  .bg-parley {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bg-parley img {
+    width: 90%;
+    height: auto;
+  }
+
+  .screen-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .screen-box img {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
