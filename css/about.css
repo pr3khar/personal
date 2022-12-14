@@ -74,7 +74,7 @@ body {
 .header {
   font-family: "DM Serif Display", serif;
   width: 100%;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 400;
   text-align: left;
   margin-bottom: 30px;
@@ -182,9 +182,9 @@ button a {
   }
 
   .header {
-    width: 90%;
-    font-size: 3.5rem;
-    font-weight: 600;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 24px;
   }
@@ -194,7 +194,24 @@ button a {
     margin-bottom: 1px;
   }
 
+  .header-2 {
+    font-size: 2rem;
+  }
+
   .work-desc {
     margin-top: 20px;
+  }
+
+  .work-row {
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    height: auto;
+  }
+
+  .company {
+    margin-bottom: 8px;
   }
 }
