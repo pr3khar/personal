@@ -141,3 +141,12 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+
+#proctur-button {
+  width: 100px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #1e465c;
+  text-align: center;
+  margin-left: -0.5px;
+}

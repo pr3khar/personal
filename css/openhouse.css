@@ -134,6 +134,20 @@ body {
   margin-top: 12px;
 }
 
+.divider {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ebebeb;
+  height: 2px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.moments-logo {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
 @media only screen and (max-width: 800px) {
   #open-landing svg {
     position: absolute;

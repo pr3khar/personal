@@ -1,0 +1,274 @@
+@import url("https://use.typekit.net/ghf7cex.css");
+/* @import url("https://use.typekit.net/zmy0cob.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+/* @import url("https://use.typekit.net/aby7dwr.css"); */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-light: #fdfdfd;
+  --theme-blue: #e0e7f1;
+
+  --blue: #3b8eef;
+  --pink: #fc466d;
+  --yellow: #ffd82b;
+  --green: #64ffa2;
+
+  --dark-bg: rgb(22, 22, 22);
+  --light-bg: #ffffff;
+  --grey-bg: #f4f4f5;
+
+  --text: #8a8a8a;
+  --text-dark: #1d1e26;
+  --text-med: #636363;
+
+  --text-light: #a9aaac;
+  --text-vlight: #fffffb;
+
+  --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
+  --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--light-bg);
+  overflow-x: hidden;
+  color: var(--text-dark);
+}
+
+.now-bg {
+  background-color: #f5f5f2;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 6rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.now-div {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 75px;
+}
+
+.div-sub {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  letter-spacing: -0.3px;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: -0.3px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.sub-row {
+  font-size: 1rem;
+  letter-spacing: -0.3px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+#l2 {
+  opacity: 0.6;
+}
+
+#l3 {
+  opacity: 0.4;
+}
+
+#now a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(92, 27, 148);
+}
+
+#hyphen {
+  opacity: 0.35;
+}
+
+.block {
+  width: 100%;
+  max-width: 1000px;
+  height: 8px;
+  background-color: var(--blue);
+  margin-bottom: 24px;
+}
+
+.block-2 {
+  width: 100%;
+  max-width: 1000px;
+  height: 8px;
+  background-color: var(--pink);
+  margin-bottom: 24px;
+}
+
+.block-3 {
+  width: 100%;
+  max-width: 1000px;
+  height: 8px;
+  background-color: var(--yellow);
+  margin-bottom: 24px;
+}
+
+.block-4 {
+  width: 100%;
+  max-width: 1000px;
+  height: 8px;
+  background-color: var(--green);
+  margin-bottom: 24px;
+}
+
+.now-div p {
+  margin-top: 12px;
+  line-height: 28px;
+}
+
+#grad-1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#grad-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#grad-3 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#grad-4 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  transition: all 0.3s ease-in;
+  opacity: 100%;
+  margin-top: 75px;
+  margin-bottom: -100px;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#card-2 {
+  margin-left: 50px;
+}
+
+.card-header {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  font-style: italic;
+}
+
+#sub-header {
+  font-weight: 300;
+  color: var(--text);
+}
+
+.learning-block {
+  width: 100%;
+  background-color: #f5f5f2;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.learning-block img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  min-width: 65px;
+}
+
+.para-block {
+  letter-spacing: -0.3px;
+  font-size: 1.1rem;
+  line-height: 30px;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  .card-row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: auto;
+  }
+
+  #card-2 {
+    margin: auto;
+  }
+
+  .text-hero {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  .learning-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .para-block {
+    margin-left: 12px;
+  }
+}
