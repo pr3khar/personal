@@ -1008,7 +1008,9 @@ body {
   }
 
   .photo-test {
-    margin-top: 180px;
+    margin-top: 150px;
+    width: 90%;
+    color: #ffffff;
   }
 
   .pie {
