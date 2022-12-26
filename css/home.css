@@ -487,12 +487,6 @@ body {
   border-radius: 4px;
 }
 
-.ieee img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 4px;
-}
-
 .openhouse {
   width: 100%;
   max-width: 1100px;
@@ -633,6 +627,72 @@ body {
   background-color: #e6e6e6;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.column-extra2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.music {
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/music.svg");
+  background-color: #cccccc;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 12px;
+  letter-spacing: -0.3px;
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+}
+
+.photograph {
+  width: 100%;
+  height: 275px;
+  background-image: url("../assets/eyes.webp");
+  background-size: 100% auto;
+  background-color: #cccccc;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 12px;
+  margin-top: 25px;
+  letter-spacing: -0.3px;
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+}
+
+.music-test {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #eeecc6;
+  margin-top: 225px;
+}
+
+.photo-test {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(233, 95, 95);
+  margin-top: 210px;
+}
+
+#resume {
+  margin-top: 25px;
+}
+
+#red {
+  color: rgb(233, 95, 95);
 }
 
 @media only screen and (max-width: 600px) {
@@ -877,12 +937,6 @@ body {
     border-radius: 4px;
   }
 
-  .ieee img {
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 25px;
-  }
-
   .openhouse {
     width: 90%;
     margin: auto;
@@ -951,6 +1005,10 @@ body {
     font-size: 1.25rem;
     color: #ef5c34;
     padding-right: 20px;
+  }
+
+  .photo-test {
+    margin-top: 180px;
   }
 
   .pie {
@@ -1025,5 +1083,47 @@ body {
 
   #extras {
     margin-bottom: 50px;
+  }
+
+  .column-extra2 {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .music {
+    margin-left: 0.1px;
+  }
+
+  .photograph {
+    width: 100%;
+    height: 275px;
+    background-image: url("../assets/eyes.webp");
+    background-color: #cccccc;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 0.1px;
+    margin-top: 25px;
+    letter-spacing: -0.3px;
+    font-family: "Inter", sans-serif;
+    border-radius: 4px;
+  }
+
+  .music-test {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #eeecc6;
+    margin-top: 200px;
+  }
+
+  .music-test p {
+    width: 70%;
+  }
+
+  .photo-test p {
+    width: 70%;
   }
 }
