@@ -1008,8 +1008,12 @@ body {
   }
 
   .photo-test {
-    margin-top: 150px;
+    margin-top: 135px;
     width: 90%;
+    color: #ffffff;
+  }
+
+  #red {
     color: #ffffff;
   }
 
