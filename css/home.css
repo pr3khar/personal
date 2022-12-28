@@ -674,6 +674,7 @@ body {
   align-items: center;
   color: #eeecc6;
   margin-top: 225px;
+  font-weight: 700;
 }
 
 .photo-test {
@@ -685,6 +686,7 @@ body {
   align-items: center;
   color: rgb(233, 95, 95);
   margin-top: 210px;
+  font-weight: 700;
 }
 
 #resume {
