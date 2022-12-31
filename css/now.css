@@ -216,9 +216,9 @@ p {
 
 .learning-block {
   width: 100%;
-  background-color: #f5f5f2;
+  background-color: #e5ebff;
   border-radius: 10px;
-  padding: 12px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   margin-top: 24px;
@@ -240,7 +240,7 @@ p {
 
 .para-block {
   letter-spacing: -0.3px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 30px;
   margin-left: 16px;
 }
