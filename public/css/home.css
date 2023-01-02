@@ -269,10 +269,11 @@ body {
   height: auto;
   border: solid 2.5px var(--grey-bg);
   overflow: hidden;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 4px;
+  padding-bottom: 12px;
   height: 316px;
 }
 
@@ -622,13 +623,40 @@ body {
 }
 
 .sec-line {
-  height: 3px;
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  background-color: #e6e6e6;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.p {
+  width: 250px;
+  font-size: 0.9rem;
+  animation: blink 1s linear infinite;
+  color: var(--text-med);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 .column-extra2 {
@@ -655,7 +683,7 @@ body {
 .photograph {
   width: 100%;
   height: 275px;
-  background-image: url("../assets/eyes.webp");
+  background-image: url("../assets/photography.jpg");
   background-size: 100% auto;
   background-color: #cccccc;
   font-size: 2rem;
@@ -686,7 +714,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: rgb(233, 95, 95);
+  color: rgb(255, 255, 255);
   margin-top: 210px;
   font-weight: 700;
 }
@@ -696,7 +724,7 @@ body {
 }
 
 #red {
-  color: rgb(233, 95, 95);
+  color: rgb(24, 40, 130);
 }
 
 @media only screen and (max-width: 1150px) {
@@ -1105,7 +1133,7 @@ body {
   .photograph {
     width: 100%;
     height: 275px;
-    background-image: url("../assets/eyes.webp");
+    background-image: url("../assets/photography.jpg");
     background-color: #cccccc;
     font-size: 2rem;
     font-weight: 600;
@@ -1548,7 +1576,7 @@ body {
   .photograph {
     width: 100%;
     height: 275px;
-    background-image: url("../assets/eyes.webp");
+    background-image: url("../assets/photography.jpg");
     background-color: #cccccc;
     font-size: 2rem;
     font-weight: 600;
@@ -1580,5 +1608,12 @@ body {
 
   .sec-line {
     width: 100%;
+  }
+
+  .p {
+    width: 350px;
+    font-size: 0.75rem;
+    animation: blink 1s linear infinite;
+    color: var(--text-med);
   }
 }
