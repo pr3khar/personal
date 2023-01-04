@@ -170,6 +170,13 @@ button a {
   margin-top: 100px;
 }
 
+.block p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+  color: var(--text-med);
+}
+
 @media only screen and (max-width: 800px) {
   .block {
     width: 90%;
