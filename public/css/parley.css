@@ -2,6 +2,13 @@
 @import url("https://use.typekit.net/zmy0cob.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0px;
+}
+
 :root {
   --theme-light: #fdfdfd;
   --theme-blue: #e0e7f1;

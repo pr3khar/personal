@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0px;
+}
 
 :root {
   --theme-light: #fdfdfd;
@@ -20,77 +27,72 @@
   --text-light: #a9aaac;
   --text-vlight: #fffffb;
 
+  --upstox: #551e90;
+  --openhouse: #ef5c34;
+
   --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
   --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
 }
 
 nav {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   width: 100%;
+  height: 4.25rem;
   position: fixed;
+  margin: auto;
   z-index: 100;
-  height: 5.5rem;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  background-image: linear-gradient(
-    rgb(255, 255, 255, 1),
-    rgb(255, 255, 255, 1),
-    rgb(255, 255, 255, 0.85),
-    rgb(255, 255, 255, 0)
-  );
+  align-items: center;
 }
 
 .fit-nav {
-  width: 90%;
+  width: 95%;
   max-width: 1100px;
-  height: 2.5rem;
+  height: 100%;
+  padding: 0px 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  background-color: rgb(245, 245, 245, 0.8);
+  border-radius: 0px 0px 24px 24px;
+  border: 1px solid #f5f5f5;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.3px;
+  margin-top: -4px;
+}
+
+.nav-links {
+  width: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-links a {
-  margin-left: 30px;
+  margin-left: 8px;
   font-size: 1rem;
   text-decoration: none;
   color: var(--text-dark);
-  font-weight: 400;
-  display: inline-block;
-  position: relative;
-  letter-spacing: -0.2px;
-}
-
-.nav-links a:after {
-  margin-top: 3px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--text-dark);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.nav-links a:hover:after {
-  color: var(--text-dark);
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  transition: all 0.25s ease-out;
 }
 
 .nav-links a:hover {
-  color: var(--text-dark);
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 238, 255),
+    rgb(219, 227, 255)
+  );
+  font-weight: 500;
 }
 
 #light {
@@ -102,24 +104,24 @@ nav {
 }
 
 @media only screen and (max-width: 800px) {
+  nav {
+    height: 4.5rem;
+  }
+
   .fit-nav {
     width: 95%;
-    margin-bottom: 36px;
-  }
-
-  .nav-links a {
-    margin-left: 16px;
-  }
-
-  #light {
-    visibility: hidden;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
+    padding: 0px 16px;
   }
 
   .logo {
     font-size: 1.1rem;
+  }
+
+  .work-tab {
+    visibility: hidden;
+  }
+
+  .nav-links a {
+    margin-left: 12px;
   }
 }

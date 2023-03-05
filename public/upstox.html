@@ -18,6 +18,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prakhar Prasad</title>
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/upstox.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/nav.css" />
@@ -26,13 +27,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="shortcut icon" href="./assets/melogo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/dist/assets/owl.theme.default.css"
+    />
     <script
-      src="https://kit.fontawesome.com/03fea682a1.js"
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
     ></script>
-    <title>Prakhar | Work at Upstox</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
-
   <body>
     <nav class="nav">
       <div class="fit-nav">
@@ -41,507 +49,440 @@
           onclick="location.href='index.html';"
           style="cursor: pointer"
         >
-          prakhar <span id="light">⇌ pr3khar</span>
+          prakhar
         </div>
         <div class="nav-links">
-          <a href="about.html">me</a>
-          <a href="index.html#work">work</a>
-          <a href="now.html">now</a>
+            <a href="index.html#work" class="work-tab">work</a>
+            <a href="about.html">me</a>
+            <a href="now.html">now</a>
         </div>
       </div>
     </nav>
-
-    <section id="header-img">
-      <div class="hero">
-        <div class="text-hero">
-          Helping 10 million+ Indians own their future.
-        </div>
-        <img
-          src="https://res.cloudinary.com/dfy6gfncm/image/upload/v1673004542/upstox-hero_mnpexr.png"
-        />
-      </div>
-    </section>
-
-    <section id="text-desc">
-      <div class="breadcrumb">
-        <a href="index.html">home</a> &nbsp;/&nbsp; upstox
-      </div>
-
-      <div class="header">overview</div>
-      <div class="para">
-        Upstox is a tech-first low-cost broking firm in India providing trading
-        opportunities to a user-base of 10 million+ Indians with the goal to
-        make investing magically simple for the masses, I am interning with the
-        product design team since April 2022, under the leadership of
-        <a href="https://www.linkedin.com/in/divyebokdia/">Divye Bokdia</a>. I
-        have worked on multiple projects parallelly with varied scales, scopes
-        and timelines.
-      </div>
-    </section>
-
-    <section id="text-desc">
-      <div class="header">key learnings</div>
-      <div class="learning-block">
-        <div class="icon">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="50" height="50" rx="25" fill="white" />
-            <path
-              d="M20.0342 33.291C18.3643 38.2568 11.7432 38.2568 11.7432 38.2568C11.7432 38.2568 11.7432 31.6357 16.709 29.9658"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M34.9463 21.6891L25 31.6354L18.3643 24.9996L28.3105 15.0533C32.0752 11.2887 35.8398 11.3326 37.4512 11.567C37.6998 11.6002 37.9306 11.7142 38.108 11.8916C38.2854 12.069 38.3994 12.2998 38.4326 12.5484C38.667 14.1598 38.7109 17.9244 34.9463 21.6891Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M33.291 23.3447V32.8076C33.2866 33.1167 33.1603 33.4116 32.9395 33.6279L28.208 38.374C28.0579 38.524 27.8699 38.6303 27.6641 38.6818C27.4582 38.7332 27.2423 38.7279 27.0393 38.6662C26.8363 38.6046 26.6538 38.4889 26.5114 38.3317C26.3689 38.1745 26.2718 37.9815 26.2305 37.7734L25 31.6357"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M26.6553 16.709H17.1924C16.8833 16.7134 16.5885 16.8397 16.3721 17.0605L11.626 21.792C11.4761 21.9421 11.3697 22.1301 11.3183 22.3359C11.2668 22.5418 11.2722 22.7577 11.3338 22.9607C11.3955 23.1637 11.5111 23.3462 11.6683 23.4886C11.8256 23.6311 12.0185 23.7282 12.2266 23.7695L18.3643 25"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-        <div class="para-block">
-          The best way to build great products is to <strong>ship fast</strong>,
-          get insights and feedback from the users and then,
-          <strong>iterate and improve.</strong>
+    <div class="bg"></div>
+    <div class="up-home">
+      <div class="main-tile">
+            <i class="ph-arrow-left-bold"           
+            onclick="location.href='index.html';"
+            style="cursor: pointer"></i>
+        <div class="header-tile">Making investing simple for everyone.</div>
+        <div class="details">
+          <div class="c1">
+            <div class="c-item">Timeline</div>
+            <div class="c-item">Role</div>
+            <div class="c-item">Company</div>
+          </div>
+          <div class="c2">
+            <div class="c-item">Apr, 2022 - Aug, 2022</div>
+            <div class="c-item">Product Design Intern</div>
+            <div class="c-item">Upstox</div>
+          </div>
         </div>
       </div>
-
-      <div class="learning-block">
-        <div class="icon">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="50" height="50" rx="25" fill="white" />
-            <path
-              d="M25 39.0625C32.7665 39.0625 39.0625 32.7665 39.0625 25C39.0625 17.2335 32.7665 10.9375 25 10.9375C17.2335 10.9375 10.9375 17.2335 10.9375 25C10.9375 32.7665 17.2335 39.0625 25 39.0625Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M32.0312 37.1875V32.0312L25 16.7969L17.9688 32.0312V37.1875"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M25 34.375C25 33.4426 25.3704 32.5484 26.0297 31.8891C26.689 31.2298 27.5832 30.8594 28.5156 30.8594C29.448 30.8594 30.3422 31.2298 31.0015 31.8891C31.6609 32.5484 32.0312 33.4426 32.0312 34.375"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M25 39.0625V34.375C25 33.4426 24.6296 32.5484 23.9703 31.8891C23.311 31.2298 22.4168 30.8594 21.4844 30.8594C20.552 30.8594 19.6578 31.2298 18.9985 31.8891C18.3391 32.5484 17.9688 33.4426 17.9688 34.375"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M21.2207 25H28.7793"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+      <div class="company-about">
+        <div class="company-image">
+          <img src="assets/upstox-home.png" />
         </div>
-        <div class="para-block">
-          It is important to <strong>document</strong> your design process, so
-          when someone else picks up the project or even yourself, at some later
-          stage, you can understand the reason behind why certain decisions and
-          choices were made.
-        </div>
-      </div>
-
-      <div class="learning-block">
-        <div class="icon">
-          <svg
-            width="52"
-            height="52"
-            viewBox="0 0 52 52"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="0.5"
-              y="0.5"
-              width="51"
-              height="51"
-              rx="25.5"
-              fill="white"
-            />
-            <path
-              d="M26 23.0703C29.236 23.0703 31.8594 20.447 31.8594 17.2109C31.8594 13.9749 29.236 11.3516 26 11.3516C22.764 11.3516 20.1406 13.9749 20.1406 17.2109C20.1406 20.447 22.764 23.0703 26 23.0703Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M34.7891 38.3047C38.0251 38.3047 40.6484 35.6814 40.6484 32.4453C40.6484 29.2093 38.0251 26.5859 34.7891 26.5859C31.553 26.5859 28.9297 29.2093 28.9297 32.4453C28.9297 35.6814 31.553 38.3047 34.7891 38.3047Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M17.2109 38.3047C20.447 38.3047 23.0703 35.6814 23.0703 32.4453C23.0703 29.2093 20.447 26.5859 17.2109 26.5859C13.9749 26.5859 11.3516 29.2093 11.3516 32.4453C11.3516 35.6814 13.9749 38.3047 17.2109 38.3047Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <rect
-              x="0.5"
-              y="0.5"
-              width="51"
-              height="51"
-              rx="25.5"
-              stroke="#E7EBF3"
-            />
-          </svg>
-        </div>
-        <div class="para-block">
-          <strong>Involve</strong> the
-          <strong>engineering and product teams</strong> during the design
-          process at regular intervals, so as everyone is on the same page in
-          terms of expectations, goals, outcome and feasibility. Constant
-          communication is essential as the final product is a blend of the work
-          done by multiple teams and not just design or engineering in
-          isolation.
-        </div>
-      </div>
-
-      <div class="learning-block">
-        <div class="icon">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="50" height="50" rx="25" fill="white" />
-            <path
-              d="M22.0703 27.3438H12.1094C11.7986 27.3438 11.5005 27.2203 11.2807 27.0005C11.061 26.7807 10.9375 26.4827 10.9375 26.1719V16.7969C10.9375 16.4861 11.061 16.188 11.2807 15.9682C11.5005 15.7485 11.7986 15.625 12.1094 15.625H20.8984C21.2092 15.625 21.5073 15.7485 21.7271 15.9682C21.9468 16.188 22.0703 16.4861 22.0703 16.7969V29.6875C22.0703 31.2415 21.453 32.7319 20.3541 33.8307C19.2553 34.9295 17.7649 35.5469 16.2109 35.5469"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M39.0625 27.3438H29.1016C28.7908 27.3438 28.4927 27.2203 28.2729 27.0005C28.0532 26.7807 27.9297 26.4827 27.9297 26.1719V16.7969C27.9297 16.4861 28.0532 16.188 28.2729 15.9682C28.4927 15.7485 28.7908 15.625 29.1016 15.625H37.8906C38.2014 15.625 38.4995 15.7485 38.7193 15.9682C38.939 16.188 39.0625 16.4861 39.0625 16.7969V29.6875C39.0625 31.2415 38.4452 32.7319 37.3463 33.8307C36.2475 34.9295 34.7571 35.5469 33.2031 35.5469"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-        <div class="para-block">
-          There are less things as sweet as getting validation for your design
-          decisions through data or user research.
-        </div>
-      </div>
-
-      <div class="learning-block">
-        <div class="icon">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="50" height="50" rx="25" fill="white" />
-            <path
-              d="M25 37.8906C32.1193 37.8906 37.8906 32.1193 37.8906 25C37.8906 17.8807 32.1193 12.1094 25 12.1094C17.8807 12.1094 12.1094 17.8807 12.1094 25C12.1094 32.1193 17.8807 37.8906 25 37.8906Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M25 9.17969V15.0391"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M9.17969 25H15.0391"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M25 40.8203V34.9609"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M40.8203 25H34.9609"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M25 29.6875C27.5888 29.6875 29.6875 27.5888 29.6875 25C29.6875 22.4112 27.5888 20.3125 25 20.3125C22.4112 20.3125 20.3125 22.4112 20.3125 25C20.3125 27.5888 22.4112 29.6875 25 29.6875Z"
-              stroke="#404656"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-        <div class="para-block">
-          Understand the <strong>business goals</strong> & requirements and then
-          craft the best possible experience for the user within those
-          constraints. If you miss out on either, it won’t be the optimal
-          solution.
-        </div>
-      </div>
-    </section>
-
-    <section id="text-desc">
-      <div class="header">projects I worked on</div>
-      <div class="para">
-        The work I am doing at Upstox can be divided into 3 categories:
-        <br /><br />
-        <strong>Adhoc tasks:</strong> These tasks come in from time to time on
-        an ad hoc basis and need to be done ASAP. You may or may not be able to
-        craft the most elegant solution for these as time is of the essence and
-        the resources are limited in terms of engineering, so you have to find
-        the best and most efficient within the constraints.<br /><br />
-        <strong>High-priority:</strong> I was involved in some high-priority
-        projects that would have a massive impact instantly, these keep changing
-        from time to time, based on the goal of the company for that quarter.
-        These involved tweaking and modifying the current experience based on
-        feedback and data. <br /><br />
-        <strong>Exploratory projects:</strong> These projects don’t have a
-        specific goal or timeline but are taken to experiment and explore a
-        different route. Since there are no specific goals or scope, as a
-        designer you can go wild and you may come up with something amazing or
-        in case not, it will anyhow be a good learning experience.
-
-        <br /><br />
-        Some of the projects I worked on: <br />
-        <ul>
-          <br />
-          <li>
-            Creating components to cover new flows and features as per the
-            design system.
-          </li>
-          <li>Polishing the interface and VQA of beta applications.</li>
-          <li>
-            Revamping and creating the experience of the 3 features and
-            offerings from scratch and then documenting them for handoff to the
-            engineering team.
-          </li>
-          <li>An exploratory project to enhance the search experience.</li>
-          <li>+ many more.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="nda">
-      <div class="container">
-        All my work done at upstox is covered under a
-        <strong>non-disclosure agreement</strong>, you may access some of it
-        using a password:
-
-        <div class="view-link">
-          <a href="upstoxlock.html">
-            view
+        <div class="company-text">
+          <div class="company-logo">
             <svg
-              width="25"
-              height="28"
-              viewBox="0 0 25 28"
+              width="125"
+              height="39"
+              viewBox="0 0 125 39"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <g clip-path="url(#clip0_3_141)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M83.2388 8.4231V11.9594H77.286V22.0623C77.286 24.2084 78.5262 25.2814 80.5842 25.2814C81.697 25.2612 82.7964 25.0992 83.8623 24.7955L84.4053 28.3723C83.393 28.7705 81.6099 29.0472 79.9876 29.0472C75.7643 29.0472 73.1096 26.6716 73.1096 22.5684V11.9594H69.5165V8.4231H73.1767V1.94434H77.2324V8.4231H83.2388ZM60.3787 16.4406C57.8314 15.9142 56.8861 15.2798 56.8861 14.0178C56.8861 12.5263 58.4012 11.6625 61.4513 11.6625C63.5496 11.6625 65.9562 12.1282 67.5919 12.8435L68.0343 9.2262C66.3517 8.49059 63.7239 8.00469 61.2435 8.00469C56.1957 8.00469 52.8304 10.5287 52.8304 13.9571C52.8304 17.075 54.7209 19.1063 58.2738 19.8284L61.2569 20.4358C63.8646 20.9622 64.9573 21.6978 64.9573 23.0678C64.9573 24.6268 63.5429 25.3826 60.5195 25.3826C58.1464 25.3556 55.8002 24.8562 53.6148 23.9249L53.112 27.5287C54.8549 28.4735 57.7174 29.0404 60.7877 29.0404C65.688 29.0404 69.0063 27.0833 69.0063 23.0003C69.0063 19.4843 66.8209 17.7633 62.7183 16.9197L60.3787 16.4406ZM83.8028 18.5259C83.8028 12.6141 88.3881 8.00469 94.5286 8.00469C100.669 8.00469 105.254 12.6141 105.254 18.5259C105.254 24.4378 100.676 29.0472 94.5353 29.0472C88.3948 29.0472 83.8095 24.4378 83.8095 18.5259H83.8028ZM87.9658 18.5259C87.9658 22.2512 90.7277 25.1329 94.5353 25.1329C98.343 25.1329 101.098 22.2445 101.098 18.5259C101.098 14.8006 98.343 11.9189 94.5353 11.9189C90.7277 11.9189 87.9725 14.8006 87.9725 18.5259H87.9658ZM108.713 8.42307L113.942 15.5362L119.177 8.42307H123.971L116.53 18.3099L124.138 28.622H119.352L113.942 21.0702L108.539 28.622H103.746L111.354 18.3099L103.913 8.42307H108.713ZM34.6635 11.1833C36.1584 9.2667 38.431 8.00469 41.8565 8.00469C47.5949 8.00469 51.9925 12.4251 51.9925 18.6339C51.9925 24.8427 47.5949 29.0472 41.8565 29.0472C38.431 29.0472 36.1584 27.7852 34.6635 25.8685V37.0444H30.5006V8.42985H34.6635V11.1833ZM34.6903 18.6339C34.6903 22.3592 37.4858 25.3016 41.3538 25.3016C45.2419 25.3016 47.8295 22.3525 47.8362 18.6339C47.8362 14.9086 45.2486 11.7502 41.3605 11.7502H41.3538C37.4657 11.757 34.6903 14.9086 34.6903 18.6339ZM9.09685 19.248C9.70688 18.8161 10.2834 18.3302 10.813 17.797C11.8051 16.805 12.6297 15.6644 13.2598 14.4159V19.8014C13.2598 23.1488 15.0899 25.0789 18.1803 25.0789C21.3578 25.0789 23.8583 23.1488 23.8583 19.8014V8.42307H28.0145V28.622H23.8315V26.0777C23.1611 27.1103 21.2439 29.0404 17.5233 29.0404C12.0129 29.0404 9.09015 25.5918 9.09015 20.6855L9.09685 19.248ZM0 21.5628V17.5136C2.42672 17.5068 4.75288 16.5485 6.48242 14.8546C7.32708 14.011 8.00415 13.0122 8.4667 11.9121C8.92925 10.8053 9.17058 9.62431 9.17058 8.42978H13.2531C13.2531 10.1575 12.9112 11.8649 12.2409 13.4576C11.5772 15.0503 10.5985 16.4945 9.37169 17.7093C6.87123 20.1793 3.50601 21.5628 0 21.5628Z"
+                  fill="#41246E"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3_141">
+                  <rect width="125" height="39" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <p>
+            Upstox was founded in 2011 and is headquartered in Mumbai, India. It
+            is one of India's leading trading application, committed to making
+            investing simple, affordable, and accessible for everyone. In 2022,
+            it reached the milestone of having 1 crore (10 million) users.
+            <br /><br />
+            I interned with the product design team from April, 2022 till
+            August, 2022 — under the leadership of
+            <a href="https://www.linkedin.com/in/divyebokdia/">Divye Bokdia</a>.
+            I worked on multiple projects with varied scopes and timelines while
+            collaborating with the product and engineering teams. <br /><br />
+            I got to understand how to work with a design system, how to
+            document designs and make production-ready files, design with data
+            and that a design process is unique to each problem.
+          </p>
+        </div>
+      </div>
+      <div class="upstox-work-about">
+        <div class="about-title">Key <span id = "up-text">learnings</span></div>
+        <div class="learning-block">
+          <div class="icon">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="50" rx="25" fill="#EDEBE6" />
               <path
-                d="M1.20374 14.0078H23.2037"
-                stroke="#FFFFF4"
+                d="M20.0342 33.291C18.3643 38.2568 11.7432 38.2568 11.7432 38.2568C11.7432 38.2568 11.7432 31.6357 16.709 29.9658"
+                stroke="#404656"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M1.20374 18.0078H23.2037"
-                stroke="#FFFFF4"
+                d="M34.9463 21.6891L25 31.6354L18.3643 24.9996L28.3105 15.0533C32.0752 11.2887 35.8398 11.3326 37.4512 11.567C37.6998 11.6002 37.9306 11.7142 38.108 11.8916C38.2854 12.069 38.3994 12.2998 38.4326 12.5484C38.667 14.1598 38.7109 17.9244 34.9463 21.6891Z"
+                stroke="#404656"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M1.20374 22.0078H23.2037"
-                stroke="#FFFFF4"
+                d="M33.291 23.3447V32.8076C33.2866 33.1167 33.1603 33.4116 32.9395 33.6279L28.208 38.374C28.0579 38.524 27.8699 38.6303 27.6641 38.6818C27.4582 38.7332 27.2423 38.7279 27.0393 38.6662C26.8363 38.6046 26.6538 38.4889 26.5114 38.3317C26.3689 38.1745 26.2718 37.9815 26.2305 37.7734L25 31.6357"
+                stroke="#404656"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M22.2037 10.0078H2.20374C1.65145 10.0078 1.20374 10.4555 1.20374 11.0078V25.0078C1.20374 25.5601 1.65145 26.0078 2.20374 26.0078H22.2037C22.756 26.0078 23.2037 25.5601 23.2037 25.0078V11.0078C23.2037 10.4555 22.756 10.0078 22.2037 10.0078Z"
-                stroke="#FFFFF4"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M7.70374 10.0078V5.50781C7.70374 4.31434 8.17784 3.16975 9.02176 2.32583C9.86567 1.48192 11.0103 1.00781 12.2037 1.00781C13.3972 1.00781 14.5418 1.48192 15.3857 2.32583C16.2296 3.16975 16.7037 4.31434 16.7037 5.50781V10.0078"
-                stroke="#FFFFF4"
+                d="M26.6553 16.709H17.1924C16.8833 16.7134 16.5885 16.8397 16.3721 17.0605L11.626 21.792C11.4761 21.9421 11.3697 22.1301 11.3183 22.3359C11.2668 22.5418 11.2722 22.7577 11.3338 22.9607C11.3955 23.1637 11.5111 23.3462 11.6683 23.4886C11.8256 23.6311 12.0185 23.7282 12.2266 23.7695L18.3643 25"
+                stroke="#404656"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-          </a>
+          </div>
+          <div class="para-block">
+            The best way to build great products is to
+            <strong>ship fast</strong>, get insights and feedback from the users
+            and then,
+            <strong>iterate and improve.</strong>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="footer" class="footer">
-      <div class="footer-line-2"></div>
-      <div class="footer-fit">
-        <div class="footer-hello">
-          <div class="head-1">
-            <a href="mailto:pr3khar@gmail.com">
-              say hello
-              <svg
-                width="34"
-                height="32"
-                viewBox="0 0 34 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.9368 17.3935L24.3863 29.6876C24.5417 29.8305 24.7303 29.929 24.9334 29.9734C25.1366 30.0178 25.3474 30.0065 25.545 29.9406C25.7427 29.8748 25.9205 29.7567 26.061 29.5978C26.2014 29.439 26.2997 29.245 26.3461 29.0348L31.9713 3.51398C32.0185 3.2942 32.0073 3.06523 31.939 2.85152C31.8707 2.63782 31.7478 2.4474 31.5834 2.30059C31.4191 2.15378 31.2194 2.05609 31.0058 2.01796C30.7922 1.97983 30.5726 2.00268 30.3705 2.08407L2.75333 13.3524C1.64625 13.8031 1.79585 15.4817 2.96278 15.7304L10.9368 17.3935Z"
-                  stroke="#A8A9AB"
-                  stroke-width="2.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11 18L31 3"
-                  stroke="#A8A9AB"
-                  stroke-width="2.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18 23.945L13.1359 28.6408C12.9623 28.8109 12.7403 28.9274 12.4981 28.9754C12.2558 29.0234 12.0042 29.0008 11.7753 28.9105C11.5464 28.8201 11.3504 28.6661 11.2124 28.4681C11.0743 28.27 11.0004 28.0367 11 27.798V18"
-                  stroke="#A8A9AB"
-                  stroke-width="2.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
+        <div class="learning-block">
+          <div class="icon">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="50" rx="25" fill="#EDEBE6" />
+              <path
+                d="M25 39.0625C32.7665 39.0625 39.0625 32.7665 39.0625 25C39.0625 17.2335 32.7665 10.9375 25 10.9375C17.2335 10.9375 10.9375 17.2335 10.9375 25C10.9375 32.7665 17.2335 39.0625 25 39.0625Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M32.0312 37.1875V32.0312L25 16.7969L17.9688 32.0312V37.1875"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 34.375C25 33.4426 25.3704 32.5484 26.0297 31.8891C26.689 31.2298 27.5832 30.8594 28.5156 30.8594C29.448 30.8594 30.3422 31.2298 31.0015 31.8891C31.6609 32.5484 32.0312 33.4426 32.0312 34.375"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 39.0625V34.375C25 33.4426 24.6296 32.5484 23.9703 31.8891C23.311 31.2298 22.4168 30.8594 21.4844 30.8594C20.552 30.8594 19.6578 31.2298 18.9985 31.8891C18.3391 32.5484 17.9688 33.4426 17.9688 34.375"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.2207 25H28.7793"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="para-block">
+            It is important to <strong>document</strong> your design process, so
+            when someone else picks up the project or even yourself, at some
+            later stage, you can understand the reason behind why certain
+            decisions and choices were made.
           </div>
         </div>
-        <div class="links">
-          <div class="menu-links">
-            <div class="link-title">contact</div>
-            <ul>
-              <li>
-                <a href="mailto:pr3khar@gmail.com"
-                  >pr3khar <i>at </i>gmail <i>dot </i>com</a
-                >
-              </li>
-              <li>
-                <a href="https://msng.link/o/?prakhar3009=tg">telegram</a>
-              </li>
-              <li><a href="https://msng.link/o/?9654459948=wa">whatsapp</a></li>
-            </ul>
+
+        <div class="learning-block">
+          <div class="icon">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="50" rx="25" fill="#EDEBE6" />
+              <path
+                d="M25 22.0703C28.236 22.0703 30.8594 19.447 30.8594 16.2109C30.8594 12.9749 28.236 10.3516 25 10.3516C21.764 10.3516 19.1406 12.9749 19.1406 16.2109C19.1406 19.447 21.764 22.0703 25 22.0703Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M33.7891 37.3047C37.0251 37.3047 39.6484 34.6814 39.6484 31.4453C39.6484 28.2093 37.0251 25.5859 33.7891 25.5859C30.553 25.5859 27.9297 28.2093 27.9297 31.4453C27.9297 34.6814 30.553 37.3047 33.7891 37.3047Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.2109 37.3047C19.447 37.3047 22.0703 34.6814 22.0703 31.4453C22.0703 28.2093 19.447 25.5859 16.2109 25.5859C12.9749 25.5859 10.3516 28.2093 10.3516 31.4453C10.3516 34.6814 12.9749 37.3047 16.2109 37.3047Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-          <div class="menu-links">
-            <div class="link-title">menu</div>
-            <ul>
-              <li><a href="index.html">home</a></li>
-              <li><a href="about.html">about</a></li>
-              <li>
-                <a
-                  href="https://pr3khar.notion.site/Prakhar-Prasad-7df8285cc23b43cfa944d0bca8b6b910"
-                  >résumé</a
-                >
-              </li>
-              <li><a href="index.html#work">work</a></li>
-              <li><a href="now.html">now</a></li>
-            </ul>
+          <div class="para-block">
+            <strong>Involve</strong> the
+            <strong>engineering and product teams</strong> during the design
+            process at regular intervals, so as everyone is on the same page in
+            terms of expectations, goals, outcome and feasibility. Constant
+            communication is essential as the final product is a blend of the
+            work done by multiple teams and not just design or engineering in
+            isolation.
+          </div>
+        </div>
+
+        <div class="learning-block">
+          <div class="icon">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="50" rx="25" fill="#EDEBE6" />
+              <path
+                d="M22.0703 27.3438H12.1094C11.7986 27.3438 11.5005 27.2203 11.2807 27.0005C11.061 26.7807 10.9375 26.4827 10.9375 26.1719V16.7969C10.9375 16.4861 11.061 16.188 11.2807 15.9682C11.5005 15.7485 11.7986 15.625 12.1094 15.625H20.8984C21.2092 15.625 21.5073 15.7485 21.7271 15.9682C21.9468 16.188 22.0703 16.4861 22.0703 16.7969V29.6875C22.0703 31.2415 21.453 32.7319 20.3541 33.8307C19.2553 34.9295 17.7649 35.5469 16.2109 35.5469"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M39.0625 27.3438H29.1016C28.7908 27.3438 28.4927 27.2203 28.2729 27.0005C28.0532 26.7807 27.9297 26.4827 27.9297 26.1719V16.7969C27.9297 16.4861 28.0532 16.188 28.2729 15.9682C28.4927 15.7485 28.7908 15.625 29.1016 15.625H37.8906C38.2014 15.625 38.4995 15.7485 38.7193 15.9682C38.939 16.188 39.0625 16.4861 39.0625 16.7969V29.6875C39.0625 31.2415 38.4452 32.7319 37.3463 33.8307C36.2475 34.9295 34.7571 35.5469 33.2031 35.5469"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="para-block">
+            There are less things as sweet as getting validation for your design
+            decisions through data or user research.
+          </div>
+        </div>
+
+        <div class="learning-block">
+          <div class="icon">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="50" rx="25" fill="#EDEBE6" />
+              <path
+                d="M25 37.8906C32.1193 37.8906 37.8906 32.1193 37.8906 25C37.8906 17.8807 32.1193 12.1094 25 12.1094C17.8807 12.1094 12.1094 17.8807 12.1094 25C12.1094 32.1193 17.8807 37.8906 25 37.8906Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 9.17969V15.0391"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.17969 25H15.0391"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 40.8203V34.9609"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M40.8203 25H34.9609"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 29.6875C27.5888 29.6875 29.6875 27.5888 29.6875 25C29.6875 22.4112 27.5888 20.3125 25 20.3125C22.4112 20.3125 20.3125 22.4112 20.3125 25C20.3125 27.5888 22.4112 29.6875 25 29.6875Z"
+                stroke="#404656"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="para-block">
+            Understand the <strong>business goals</strong> & requirements and
+            then craft the best possible experience for the user within those
+            constraints. If you miss out on either, it won’t be the optimal
+            solution.
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="quote-footer">// Stay hungry, stay foolish.</div>
-        <div class="social-icons">
-          <i
-            class="fab fa-behance"
-            aria-hidden="true"
-            onclick="location.href='https://www.behance.net/prakharprasad';"
-            style="cursor: pointer"
-          ></i>
-          <!-- <i
-          class="fab fa-github"
-          aria-hidden="true"
-          onclick="location.href='https://github.com/prakhar3009';"
+
+      <div class="upstox-work-about">
+        <div class="about-title">What did <span id = "up-text">I do</span>?</div>
+        <p id="work-about">
+          My work at Upstox can be divided into 3 categories:
+          <br /><br />
+          <strong>Adhoc tasks:</strong> These tasks aome in from time to time on
+          an ad hoc basis and needed to be done ASAP. One may or may not be able
+          to craft the most elegant solution for these as time is of the essence
+          and the resources are limited in terms of engineering, so you had to
+          find the best and most efficient within the constraints.<br /><br />
+          <strong>High-priority:</strong> I was involved in some high-priority
+          projects that would have a massive impact instantly, these keep
+          changing from time to time, based on the goal of the company for that
+          quarter. These involved tweaking and modifying the current experience
+          based on feedback and data. <br /><br />
+          <strong>Exploratory projects:</strong> These projects didn’t have a
+          specific goal or timeline but were designed to experiment and explore
+          a different route. Since there are no specific goals or scope, as a
+          designer you can go wild and you may come up with something amazing or
+          in case not, it will anyhow be a good learning experience.
+
+          <br /><br /><br />
+          Some of the stuff I did:
+          <br />
+          <div class = "proj-up-rows">
+            <div class = "proj-block">
+                Worked on the end-to-end design of MTF: Convert to delivery.
+            </div>
+            <div class = "proj-block">
+                Explored alternate designs for the in-app search experience to improve discovery and functionality.
+            </div>
+            <div class = "proj-block">
+                Maintained and created components for the design system to cover new flows and features.
+            </div>
+            <div class = "proj-block">
+                Worked on quick design fixes to reduce customer issued tickets by 40%.
+            </div>
+            <div class = "proj-block">
+                Did some Visual Quality Assessment of the web and iOS application.
+            </div>
+            <div class = "proj-block">
+                Worked on the <br>upstox pro <> upstox lite<br> switcher.
+            </div>
+            <div class = "proj-block">
+                + much more :)
+            </div>
+          </div>
+        </p>
+      </div>
+      <div class="view-work"
+            onclick="location.href='https://drive.google.com/file/d/1J9__9z3CgCrpkHjgGYK138rnKJ_1ghbX/view';"
+            style="cursor: pointer">
+        <i class="ph-lock-bold"></i>
+        <p>view my work</p>
+      </div>
+      <div class="nav-row">
+        <div
+          class="back-to-home"
+          onclick="location.href='index.html';"
           style="cursor: pointer"
-        ></i> -->
-          <i
-            class="fab fa-dribbble"
-            aria-hidden="true"
-            onclick="location.href='https://dribbble.com/prakhar3009/';"
-            style="cursor: pointer"
-          ></i>
-          <i
-            class="fa fa-linkedin"
-            aria-hidden="true"
-            onclick="location.href='https://www.linkedin.com/in/prakharpr/';"
-            style="cursor: pointer"
-          ></i>
-          <i
-            class="fab fa-twitter"
-            aria-hidden="true"
-            onclick="location.href='https://twitter.com/pr3khar/';"
-            style="cursor: pointer"
-          ></i>
+        >
+          <i class="ph-arrow-left-bold"></i>
+          <p>back to home</p>
         </div>
       </div>
-      <div class="end">Copyright © 2022 • All Rights Reserved</div>
-    </section>
+    </div>
+    <footer>
+      <div class="column">
+        <div class="row">
+          <div class="menu-links">
+            <div class="socials-text">
+              <div class="footer-head">socials</div>
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/pr3khar/">linkedIn</a>
+                </li>
+                <li><a href="https://twitter.com/pr3khar">twitter</a></li>
+                <li><a href="https://github.com/pr3khar">github</a></li>
+                <li><a href="https://read.cv/pr3khar">read.cv</a></li>
+                <!-- <li><a href="about.html">dribbble</a></li> -->
+                <li>
+                  <a href="https://music.apple.com/profile/pr3khar">music</a>
+                </li>
+              </ul>
+            </div>
+            <div class="socials-text" id="menu">
+              <div class="footer-head">menu</div>
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1eh9JpEwN3UJ1ktNoTC0_TgxOc4PII-e4/view?usp=sharing"
+                    >résumé</a
+                  >
+                </li>
+                <li><a href="index.html#work">work</a></li>
+                <li><a href="now.html">now</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="email-text">
+            <div class="footer-head">say hi</div>
+            <div class="email">
+              <a href="mailto:pr3khar@gmail.com"
+                >pr3khar <i>at </i>gmail <i>dot </i>com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-head">Copyright © 2023 • All Rights Reserved</div>
+          <div class="footer-head" id="fixed">//stay hungry, stay foolish</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
