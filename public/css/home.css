@@ -378,6 +378,10 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+  .work-button {
+    bottom: 20px;
+  }
+
   .title {
     margin-top: -12px;
     width: 100%;
