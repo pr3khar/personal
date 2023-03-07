@@ -53,7 +53,7 @@ body {
 }
 
 .fit {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 90%;
   margin: auto;
 }
@@ -109,8 +109,8 @@ body {
 }
 
 .block {
-  width: 90%;
-  max-width: 560px;
+  width: 100%;
+  max-width: 550px;
 }
 
 .block-2 {
@@ -126,19 +126,21 @@ body {
 .block img {
   margin-top: 25px;
   width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
 .block-2 img {
   margin-top: 50px;
   width: auto;
-  height: 400px;
+  height: 350px;
 }
 
 .block-3 img {
   margin-top: 50px;
-  width: auto;
-  height: 275px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }
 
 .dark-bg {

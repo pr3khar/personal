@@ -50,6 +50,7 @@ footer a {
   text-decoration: none;
   color: var(--theme-light);
   transition: all 0.25s ease-out;
+  font-weight: 300;
 }
 
 footer li {
