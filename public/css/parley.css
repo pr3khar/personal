@@ -36,7 +36,7 @@
 }
 
 body {
-  background-color: var(--lg-dark-bg);
+  background-color: var(--dark-bg);
   color: var(--text);
   font-family: sofia-pro, "sans-serif";
   text-transform: lowercase;
