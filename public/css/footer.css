@@ -1,31 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  padding: 0px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam&family=Space+Mono:wght@400;700&display=swap");
 
 :root {
   --theme-light: #fdfdfd;
   --theme-blue: #e0e7f1;
 
   --blue: #3b8eef;
+
   --pink: #fc466d;
+  --pink-2: #ff7676;
+  --pink-light: #ffd6d6;
+
   --yellow: #ffd82b;
+  --yellow-2: #ffd976;
+  --yellow-light: #fff3d6;
+
   --green: #64ffa2;
 
   --dark-bg: rgb(22, 22, 22);
   --light-bg: #ffffff;
   --grey-bg: #f4f4f5;
 
-  --text: #8a8a8a;
+  --text: #ababab;
   --text-dark: #1d1e26;
-  --text-med: #636363;
+  /* --text-med: #636363; */
 
   --text-light: #a9aaac;
-  --text-vlight: #fffffb;
+  --text-vlight: #e8e8e8;
 
   --upstox: #551e90;
   --openhouse: #ef5c34;
@@ -35,92 +35,106 @@
 }
 
 footer {
-  background-color: #222222;
-  height: 375px;
-  width: 90%;
-  max-width: 1100px;
+  width: 100%;
   margin: auto;
-  margin-top: 200px;
-  border-radius: 24px 24px 0px 0px;
-  padding: 32px;
-  font-size: 1.1rem;
+  margin-top: 150px;
+  padding-top: 150px;
+  padding-bottom: 48px;
+  background-color: var(--dark-bg);
+  color: var(--text);
+}
+
+.footer-contain {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.personal {
+  margin-top: 100px;
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 450px;
+  line-height: 1.4;
+}
+
+.email a {
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.5;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-column {
+  margin-left: 84px;
+}
+
+ul {
+  margin-top: 20px;
+  list-style-type: none;
 }
 
 footer a {
   text-decoration: none;
-  color: var(--theme-light);
-  transition: all 0.25s ease-out;
-  font-weight: 300;
+  color: var(--text);
+  opacity: 0.5;
+  position: relative;
+}
+
+footer a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  margin-top: 4px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-light);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+footer a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 footer li {
-  list-style-type: none;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu-links {
-  display: flex;
-  flex-direction: row;
-  width: 300px;
-}
-
-.footer-head {
-  color: #707070;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-ul {
-  width: 150px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 8px;
-  justify-content: space-between;
-}
-
-footer a:hover {
-  background: linear-gradient(to right, rgb(198, 214, 255), rgb(169, 178, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.email-text {
-  width: 225px;
-}
-
-.column {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#fixed {
-  width: 225px;
+  margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 800px) {
-  footer {
-    width: 90%;
-    height: 600px;
-    padding: 24px;
+  .menu-column {
+    margin-left: 0.1px;
   }
 
-  .row {
-    flex-direction: column;
+  #column-2 {
+    margin-left: 100px;
+  }
+  .footer-contain {
+    flex-direction: column-reverse;
+    justify-content: space-between;
   }
 
-  .email-text {
-    margin-top: 32px;
+  .footer-left {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  #fixed {
-    margin-top: 24px;
+  .footer-copy {
+    margin-top: 100px;
   }
 }

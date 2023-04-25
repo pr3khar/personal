@@ -1,13 +1,10 @@
-@import url("https://use.typekit.net/ghf7cex.css");
-/* @import url("https://use.typekit.net/zmy0cob.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-/* @import url("https://use.typekit.net/aby7dwr.css"); */
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam&family=Space+Mono:wght@400;700&display=swap");
 
 * {
   margin: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  padding: 0px;
 }
 
 :root {
@@ -27,8 +24,8 @@
   --text-dark: #1d1e26;
   --text-med: #636363;
 
-  --text-light: #a9aaac;
-  --text-vlight: #fffffb;
+  --text-light: #a9a8a8;
+  --text-vlight: #d3d3d3;
 
   --easing: cubic-bezier(0.68, 0.28, 0.82, 0.64);
   --easing-slick: cubic-bezier(0.02, 0.98, 0.65, 1.15);
@@ -43,222 +40,136 @@ body {
   color: var(--text-dark);
 }
 
-.now-bg {
-  padding-top: 100px;
-  height: 50vh;
+#now {
+  padding-top: 150px;
 }
 
-.title {
-  width: 100%;
-  text-align: center;
-  font-family: "Inter Tight", sans-serif;
-  margin: auto;
-  margin-top: 6rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.now-div {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 75px;
-}
-
-.div-sub {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  margin-top: 24px;
-}
-
-p {
-  font-size: 1rem;
-  margin-top: 6px;
-  font-weight: 500;
-}
-
-.sub-row {
-  font-size: 1rem;
-  font-style: italic;
-  margin-top: 4px;
-}
-
-#l2 {
-  opacity: 0.6;
-}
-
-#l3 {
-  opacity: 0.4;
-}
-
-#now a {
-  text-decoration: none;
-  font-weight: 600;
-  color: rgb(92, 27, 148);
-}
-
-#hyphen {
-  opacity: 0.35;
-}
-
-.block {
-  width: 100%;
-  max-width: 1000px;
-  height: 8px;
-  background-color: var(--blue);
-  margin-bottom: 24px;
-}
-
-.block-2 {
-  width: 100%;
-  max-width: 1000px;
-  height: 8px;
-  background-color: var(--pink);
-  margin-bottom: 24px;
-}
-
-.block-3 {
-  width: 100%;
-  max-width: 1000px;
-  height: 8px;
-  background-color: var(--yellow);
-  margin-bottom: 24px;
-}
-
-.block-4 {
-  width: 100%;
-  max-width: 1000px;
-  height: 8px;
-  background-color: var(--green);
-  margin-bottom: 24px;
-}
-
-.now-div p {
-  margin-top: 12px;
-  line-height: 28px;
-}
-
-#grad-1 {
-  font-size: 2.25rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-#grad-2 {
-  font-size: 2.25rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-#grad-3 {
-  font-size: 2.25rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-#grad-4 {
-  font-size: 2.25rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.card-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  transition: all 0.3s ease-in;
-  opacity: 100%;
-  margin-top: 75px;
-  margin-bottom: -100px;
-}
-
-.card {
-  width: 100%;
-  max-width: 360px;
-  min-height: 450px;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  border-radius: 4px;
-}
-
-#card-2 {
-  margin-left: 50px;
-}
-
-.card-header {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-style: italic;
-}
-
-#sub-header {
-  font-weight: 300;
+.other-info {
   color: var(--text);
+  letter-spacing: 0.1px;
 }
 
-.learning-block {
+.now {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+.small {
+  font-size: 2rem;
+  margin-bottom: -12px;
+}
+
+.supporting {
+  font-size: 0.9rem;
+}
+
+#bold {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+
+.mono-title {
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
   width: 100%;
-  background-color: #e5ebff;
-  border-radius: 10px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 24px;
-  align-items: center;
+  margin: auto;
+  margin-top: 32px;
+  max-width: 700px;
+  font-size: 1.25rem;
+  margin-bottom: 32px;
 }
 
-.learning-block img {
-  width: 50px;
-  height: 50px;
+.current-text {
+  margin-top: 48px;
+}
+
+.current-line {
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 16px;
+  color: var(--text-med);
+  align-items: center;
 }
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 65px;
-  min-width: 65px;
+  color: var(--text);
+  margin-right: 12px;
 }
 
-.para-block {
-  font-size: 1.2rem;
-  line-height: 30px;
-  margin-left: 16px;
+.job {
+  width: 100%;
+  max-width: 800px;
+  padding: 32px 16px;
+  margin: auto;
+  margin-top: 60px;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 24px;
+  border: 2px solid #ececec;
+  border-radius: 8px;
+}
+
+.mono-title-2 {
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  width: 100%;
+  margin: auto;
+  margin-top: 72px;
+  max-width: 700px;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  color: var(--text-med);
 }
 
 @media only screen and (max-width: 800px) {
-  .card-row {
+  .block {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
     flex-direction: column;
-  }
-
-  .card {
+    justify-content: space-between;
     margin: auto;
+    margin-top: 75px;
   }
 
-  #card-2 {
-    margin: auto;
+  .header {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 24px;
   }
 
-  .text-hero {
-    font-size: 2.5rem;
-    margin-top: 10px;
+  .small {
+    font-size: 1.25rem;
+    margin-bottom: 1px;
   }
 
-  .learning-block {
+  .header-2 {
+    font-size: 2rem;
+  }
+
+  .work-desc {
+    margin-top: 20px;
+  }
+
+  .work-row {
     flex-direction: column;
+    font-size: 1rem;
     align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    height: auto;
   }
 
-  .para-block {
-    margin-left: 12px;
+  .company {
+    margin-bottom: 8px;
   }
 }
