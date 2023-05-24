@@ -252,6 +252,60 @@ body {
   color: #ffffff;
 }
 
+.home-button {
+  padding: 32px;
+  border: 1.5px solid #dcdcdc;
+  font-size: 1.5rem;
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.home-button i {
+  margin-right: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.home-button:hover i {
+  margin-left: -8px;
+}
+
+.proj-nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.back-button {
+  padding: 32px;
+  background-color: #eeeeee;
+  border: 1.5px solid #eeeeee;
+  font-size: 1.5rem;
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.back-button i {
+  margin-left: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.back-button:hover i {
+  margin-right: -8px;
+}
+
 @media only screen and (max-width: 800px) {
   .title-row {
     width: 90%;

@@ -111,6 +111,11 @@ body {
 
 .supporting {
   font-size: 0.9rem;
+  color: var(--text);
+}
+
+.supporting a {
+  color: var(--blue);
 }
 
 #bold {
@@ -221,13 +226,14 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+  line-height: 1.4;
 }
 
 .bucket-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 320px;
+  width: 300px;
   margin-bottom: 24px;
 }
 

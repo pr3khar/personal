@@ -172,3 +172,157 @@ body {
   margin: auto;
   margin-top: 36px;
 }
+
+.work-nda {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+  color: var(--theme-light);
+  margin-top: 60px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(163, 163, 163, 1);
+  -moz-box-shadow: 0px 4px 15px 0px rgba(163, 163, 163, 1);
+  box-shadow: 0px 4px 15px 0px rgba(163, 163, 163, 1);
+}
+
+.work-nda:hover i {
+  animation: shake 0.82s var(--easing-slick);
+  transform: translate3d(0, 0, 0);
+}
+
+.work-nda i {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.work-nda p {
+  text-align: center;
+  letter-spacing: 0.3px;
+  opacity: 0.6;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.proj-up-rows {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-top: 32px;
+}
+
+.proj-block {
+  border: 1.5px solid #eeeeee;
+  width: 240px;
+  padding: 20px 16px;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 160px;
+  font-size: 1.05rem;
+  color: var(--text-med);
+}
+
+.proj-nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.home-button {
+  padding: 32px;
+  border: 1.5px solid #dcdcdc;
+  font-size: 1.5rem;
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.home-button i {
+  margin-right: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.home-button:hover i {
+  margin-left: -8px;
+}
+
+.back-button {
+  padding: 32px;
+  background-color: #eeeeee;
+  border: 1.5px solid #eeeeee;
+  font-size: 1.5rem;
+  width: 40%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.back-button i {
+  margin-left: 8px;
+  transition: all 0.25s ease-out;
+}
+
+.back-button:hover i {
+  margin-right: -8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .proj-up-rows {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .proj-block {
+    background-color: #eeebe6;
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    height: auto;
+    font-size: 1.05rem;
+    color: #3c3c3c;
+  }
+}

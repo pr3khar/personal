@@ -81,7 +81,7 @@ body {
   margin-top: 32px;
   max-width: 700px;
   font-size: 1.25rem;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .current-text {
@@ -107,8 +107,9 @@ body {
   padding: 32px 16px;
   margin: auto;
   margin-top: 60px;
-  font-size: 1.1rem;
-  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-med);
   margin-bottom: 24px;
   border: 2px solid #ececec;
   border-radius: 8px;
@@ -126,6 +127,11 @@ body {
   font-size: 1rem;
   margin-bottom: 32px;
   color: var(--text-med);
+}
+
+#ps {
+  opacity: 0.5;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 800px) {
